@@ -1,4 +1,4 @@
-<p-editor [style]="{ height: '320px' }">
+<p-editor [style]="{ height: '320px' }" (onTextChange)="onTextChange($event)">
   <ng-template pTemplate="header">
       <span class="ql-formats">
           <button type="button" class="ql-bold" aria-label="Bold"></button>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedMap, SharedString } from "fluid-framework";
-import { AzureFluidRelayService } from '../services/azure-fluid-relay.service';
+import { AzureFluidRelayService } from '../services/fluid-relay.service';
 import { AzureClient } from '@fluidframework/azure-client';
 
 @Component({
@@ -30,11 +30,11 @@ export class AzureComponent implements OnInit {
   }
 
   async ngOnInit() {
-    this.fluidContainer = await this.client.createContainer(
-      this.schema
-    );
-    this.id = await this.fluidContainer.container.attach();
-    console.log(this.id)
+    // this.fluidContainer = await this.client.createContainer(
+    //   this.schema
+    // );
+    // this.id = await this.fluidContainer.container.attach();
+    // console.log(this.id)
 
     this.getData(this.client)
 
