@@ -4,7 +4,8 @@
  */
 
 // Fork of https://github.com/ProseMirror/prosemirror-schema-basic/blob/master/src/schema-basic.js
-import { Schema } from "./interfaces"; 
+
+// import { ISchema } from './interfaces';
 
 const pDOM = ["p", 0];
 const blockquoteDOM = ["blockquote", 0];
@@ -234,4 +235,4 @@ export const marks = {
 //
 // To reuse elements from this schema, extend or read from its
 // `spec.nodes` and `spec.marks` [properties](#model.Schema.spec).
-export const schema = new Schema({ nodes: nodes as any, marks: marks as any });
+// export const schema = new Schema({ nodes: nodes as any, marks: marks as any });
